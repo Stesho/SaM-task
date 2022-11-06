@@ -33,5 +33,71 @@
     "name": "Crime and Punishment",
     "author": "Fyodor Dostoevsky",
     "price": 50
+  },
+
+
+
+  {
+    "id": 6,
+    "img": "the-picture-of-dorian-gray.jpg",
+    "name": "The Picture of Dorian Gray",
+    "author": "Oscar Wilde",
+    "price": 50
+  },
+  {
+    "id": 7,
+    "img": "anna-karenina.jpg",
+    "name": "Anna Karenina",
+    "author": "Leo Tolstoy",
+    "price": 50
+  },
+  {
+    "id": 8,
+    "img": "crime-and-punishment.jpg",
+    "name": "Crime and Punishment",
+    "author": "Fyodor Dostoevsky",
+    "price": 50
+  },
+  {
+    "id": 9,
+    "img": "the-picture-of-dorian-gray.jpg",
+    "name": "The Picture of Dorian Gray",
+    "author": "Oscar Wilde",
+    "price": 50
+  },
+  {
+    "id": 10,
+    "img": "anna-karenina.jpg",
+    "name": "Anna Karenina",
+    "author": "Leo Tolstoy",
+    "price": 50
+  },
+  {
+    "id": 11,
+    "img": "crime-and-punishment.jpg",
+    "name": "Crime and Punishment",
+    "author": "Fyodor Dostoevsky",
+    "price": 50
+  },
+  {
+    "id": 12,
+    "img": "the-picture-of-dorian-gray.jpg",
+    "name": "The Picture of Dorian Gray",
+    "author": "Oscar Wilde",
+    "price": 50
+  },
+  {
+    "id": 13,
+    "img": "anna-karenina.jpg",
+    "name": "Anna Karenina",
+    "author": "Leo Tolstoy",
+    "price": 50
+  },
+  {
+    "id": 14,
+    "img": "crime-and-punishment.jpg",
+    "name": "Crime and Punishment",
+    "author": "Fyodor Dostoevsky",
+    "price": 50
   }
 ]
