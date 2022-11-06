@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "img": "1984.jpg",
+    "name": "1984",
+    "author": "George Orwell",
+    "price": 30
+  },
+  {
+    "id": 2,
+    "img": "war-and-peace.jpg",
+    "name": "War and Peace",
+    "author": "Lev Tolstoy",
+    "price": 50
+  }
+]

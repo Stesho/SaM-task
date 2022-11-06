@@ -1,12 +1,12 @@
 import React from "react";
 import Header from "./components/header/Header";
-import Product from "./components/product/Product";
+import ProductList from "./components/productList/ProductList";
 
 function App() {
   return (
     <div className="app">
       <Header />
-      <Product />
+      <ProductList />
     </div>
   );
 }
