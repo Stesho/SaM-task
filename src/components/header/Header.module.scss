@@ -1,0 +1,19 @@
+@import '../../styles/global.scss';
+
+.header {
+  padding: 10px 0;
+  border-bottom: 1px solid #000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: var(--blue-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+  & img {
+    width: 60px;
+    height: 50px;
+    padding: 0 5px;
+  }
+}

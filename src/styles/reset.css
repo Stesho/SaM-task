@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+}
+
+body {
+  font-size: 0.875rem;
+  letter-spacing: 0.15rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button {
+  background: none;
+  border: none;
+  font-size: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+}
