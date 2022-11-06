@@ -7,11 +7,11 @@ function Product({id, img, name, author, price}) {
   const { cart, setCart } = useContext(CartContext);
 
   const addToCart = () => {
-    setCart([...cart, {
+    setCart([{
       id,
       name,
       price,
-    }]);
+    }, ...cart]);
   }
 
   return (

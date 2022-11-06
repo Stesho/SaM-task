@@ -1,10 +1,16 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import CartContext from '../../context/CartContext';
 import Button from '../button/Button';
 import styles from './Cart.module.scss';
 
 function Cart() {
   const { cart } = useContext(CartContext);
+  const [total, setTotal] = useState(0);
+
+  useEffect(() => {
+    const totalSum = cart.reduce((sum, current) => sum + current.price, 0);
+    setTotal(totalSum);
+  }, [cart]);
 
   return (
     <div className={styles.cart}>
@@ -31,7 +37,7 @@ function Cart() {
       <div className={styles.cart__checkout}>
         <div className={styles.cart__total}>
           <span className={styles.cart__totalCaption}>Total:</span>
-          <span className={styles.cart__totalSum}>$250</span>
+          <span className={styles.cart__totalSum}>${total}</span>
         </div>
         <Button>checkout</Button>
       </div>
