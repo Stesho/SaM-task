@@ -10,7 +10,28 @@
     "id": 2,
     "img": "war-and-peace.jpg",
     "name": "War and Peace",
-    "author": "Lev Tolstoy",
+    "author": "Leo Tolstoy",
+    "price": 50
+  },
+  {
+    "id": 3,
+    "img": "the-picture-of-dorian-gray.jpg",
+    "name": "The Picture of Dorian Gray",
+    "author": "Oscar Wilde",
+    "price": 50
+  },
+  {
+    "id": 4,
+    "img": "anna-karenina.jpg",
+    "name": "Anna Karenina",
+    "author": "Leo Tolstoy",
+    "price": 50
+  },
+  {
+    "id": 5,
+    "img": "crime-and-punishment.jpg",
+    "name": "Crime and Punishment",
+    "author": "Fyodor Dostoevsky",
     "price": 50
   }
 ]
