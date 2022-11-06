@@ -1,27 +1,32 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import CartContext from '../../context/CartContext';
 import Button from '../button/Button';
 import styles from './Cart.module.scss';
 
 function Cart() {
+  const { cart } = useContext(CartContext);
+
   return (
     <div className={styles.cart}>
       <h2 className={styles.cart__title}>
         Cart
       </h2>
       <div className={styles.cart__list}>
-        <div className={styles.item}>
-          <div className={styles.item__description}>
-            <div className={styles.item__name}>
-              Book name
+        {cart.map((item) => (
+          <div className={styles.item} key={item.id}>
+            <div className={styles.item__description}>
+              <div className={styles.item__name}>
+                {item.name}
+              </div>
+              <div className={styles.item__price}>
+                ${item.price}
+              </div>
             </div>
-            <div className={styles.item__price}>
-              50$
+            <div className={styles.item__delete}>
+              X
             </div>
           </div>
-          <div className={styles.item__delete}>
-            X
-          </div>
-        </div>
+        ))}
       </div>
       <div className={styles.cart__checkout}>
         <div className={styles.cart__total}>

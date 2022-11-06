@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
+import CartContext from "../../context/CartContext";
 import Button from "../button/Button";
 import styles from "./Product.module.scss";
-// import image from "../../assets/img/products/1984.jpg";
 
-function Product({img, name, author, price}) {
+function Product({id, img, name, author, price}) {
+  const { cart, setCart } = useContext(CartContext);
+
+  const addToCart = () => {
+    setCart([...cart, {
+      id,
+      name,
+      price,
+    }]);
+  }
+
   return (
     <div className={styles.product}>
       <div className={styles.product__img}>
@@ -13,7 +23,7 @@ function Product({img, name, author, price}) {
       <div className={styles.product__author}>{author}</div>
       <div className={styles.product__buyWrapper}>
         <div className={styles.product__price}>{price}$</div>
-        <Button>buy</Button>
+        <Button onClick={addToCart}>buy</Button>
       </div>
     </div>
   );

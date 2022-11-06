@@ -4,35 +4,35 @@
     "img": "1984.jpg",
     "name": "1984",
     "author": "George Orwell",
-    "price": 30
+    "price": 12
   },
   {
     "id": 2,
     "img": "war-and-peace.jpg",
     "name": "War and Peace",
     "author": "Leo Tolstoy",
-    "price": 50
+    "price": 8
   },
   {
     "id": 3,
     "img": "the-picture-of-dorian-gray.jpg",
     "name": "The Picture of Dorian Gray",
     "author": "Oscar Wilde",
-    "price": 50
+    "price": 15
   },
   {
     "id": 4,
     "img": "anna-karenina.jpg",
     "name": "Anna Karenina",
     "author": "Leo Tolstoy",
-    "price": 50
+    "price": 20
   },
   {
     "id": 5,
     "img": "crime-and-punishment.jpg",
     "name": "Crime and Punishment",
     "author": "Fyodor Dostoevsky",
-    "price": 50
+    "price": 14
   },
 
 
@@ -42,62 +42,62 @@
     "img": "the-picture-of-dorian-gray.jpg",
     "name": "The Picture of Dorian Gray",
     "author": "Oscar Wilde",
-    "price": 50
+    "price": 10
   },
   {
     "id": 7,
     "img": "anna-karenina.jpg",
     "name": "Anna Karenina",
     "author": "Leo Tolstoy",
-    "price": 50
+    "price": 10
   },
   {
     "id": 8,
     "img": "crime-and-punishment.jpg",
     "name": "Crime and Punishment",
     "author": "Fyodor Dostoevsky",
-    "price": 50
+    "price": 12
   },
   {
     "id": 9,
     "img": "the-picture-of-dorian-gray.jpg",
     "name": "The Picture of Dorian Gray",
     "author": "Oscar Wilde",
-    "price": 50
+    "price": 25
   },
   {
     "id": 10,
     "img": "anna-karenina.jpg",
     "name": "Anna Karenina",
     "author": "Leo Tolstoy",
-    "price": 50
+    "price": 16
   },
   {
     "id": 11,
     "img": "crime-and-punishment.jpg",
     "name": "Crime and Punishment",
     "author": "Fyodor Dostoevsky",
-    "price": 50
+    "price": 18
   },
   {
     "id": 12,
     "img": "the-picture-of-dorian-gray.jpg",
     "name": "The Picture of Dorian Gray",
     "author": "Oscar Wilde",
-    "price": 50
+    "price": 15.5
   },
   {
     "id": 13,
     "img": "anna-karenina.jpg",
     "name": "Anna Karenina",
     "author": "Leo Tolstoy",
-    "price": 50
+    "price": 17.8
   },
   {
     "id": 14,
     "img": "crime-and-punishment.jpg",
     "name": "Crime and Punishment",
     "author": "Fyodor Dostoevsky",
-    "price": 50
+    "price": 12.2
   }
 ]
