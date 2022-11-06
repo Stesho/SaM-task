@@ -1,6 +1,11 @@
-@import './reset.css';
-@import './fonts.css';
+@import "./reset.css";
+@import "./fonts.css";
 
 :root {
-  --blue-color: #29aae1;
+  --white: #fff;
+  --blue: #29aae1;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
 }

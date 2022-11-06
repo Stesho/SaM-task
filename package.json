@@ -25,7 +25,10 @@
       "react-app/jest",
       "airbnb",
       "prettier"
-    ]
+    ],
+    "rules": {
+      "react/prop-types": "off"
+    }
   },
   "browserslist": {
     "production": [

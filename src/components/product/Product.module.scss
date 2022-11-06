@@ -1,0 +1,29 @@
+.product {
+  display: inline-block;
+  max-width: 200px;
+  width: 100%;
+  padding: 10px;
+  margin: 20px;
+  &__img {
+    width: 100%;
+    height: 150px;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &__name {
+    padding: 5px 0 0 0;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  &__author {
+    padding: 10px 0 5px 0;
+  }
+  &__buyWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

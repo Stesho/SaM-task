@@ -1,6 +1,6 @@
-import React from 'react';
-import styles from './Header.module.scss';
-import logo from '../../assets/img/logo.jpg';
+import React from "react";
+import styles from "./Header.module.scss";
+import logo from "../../assets/img/logo.jpg";
 
 function Header() {
   return (
@@ -15,7 +15,7 @@ function Header() {
         </nav>
       </div>
     </header>
-  )
+  );
 }
 
 export default Header;
