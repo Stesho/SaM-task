@@ -5,11 +5,10 @@ import Main from "./components/main/Main";
 
 function App() {
   const [cart, setCart] = useState([]);
-  const value = useMemo(
-    () => ({ cart, setCart }), 
-    [cart]
-  );
-  
+  const value = useMemo(() => (
+    { cart, setCart }
+  ), [cart]);
+
   return (
     <CartContext.Provider value={value}>
       <div className="app">

@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
+import CartItem from '../cartItem/CartItem';
 import CartContext from '../../context/CartContext';
 import Button from '../button/Button';
 import styles from './Cart.module.scss';
@@ -19,19 +20,7 @@ function Cart() {
       </h2>
       <div className={styles.cart__list}>
         {cart.map((item) => (
-          <div className={styles.item} key={item.id}>
-            <div className={styles.item__description}>
-              <div className={styles.item__name}>
-                {item.name}
-              </div>
-              <div className={styles.item__price}>
-                ${item.price} x {item.count}
-              </div>
-            </div>
-            <div className={styles.item__delete}>
-              X
-            </div>
-          </div>
+          <CartItem key={item.id} id={item.id} name={item.name} price={item.price} count={item.count}/>
         ))}
       </div>
       <div className={styles.cart__checkout}>
