@@ -7,11 +7,21 @@ function Product({id, img, name, author, price}) {
   const { cart, setCart } = useContext(CartContext);
 
   const addToCart = () => {
-    setCart([{
-      id,
-      name,
-      price,
-    }, ...cart]);
+    const productInCart = cart.find((item) => item.id === id);
+
+    if(productInCart) {
+      const productIndex = cart.indexOf(productInCart);
+      cart[productIndex].count += 1;
+      setCart([...cart]);
+    }
+    else {
+      setCart([{
+        id,
+        name,
+        price,
+        count: 1,
+      }, ...cart]);
+    }
   }
 
   return (

@@ -8,7 +8,7 @@ function Cart() {
   const [total, setTotal] = useState(0);
 
   useEffect(() => {
-    const totalSum = cart.reduce((sum, current) => sum + current.price, 0);
+    const totalSum = cart.reduce((sum, current) => sum + current.price * current.count, 0);
     setTotal(totalSum);
   }, [cart]);
 
@@ -25,7 +25,7 @@ function Cart() {
                 {item.name}
               </div>
               <div className={styles.item__price}>
-                ${item.price}
+                ${item.price} x {item.count}
               </div>
             </div>
             <div className={styles.item__delete}>
