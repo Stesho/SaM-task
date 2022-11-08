@@ -1,8 +1,8 @@
-import React from 'react';
-import Product from '../product/Product';
-import products from '../../assets/products/products.json';
-import images from '../../services/images';
-import styles from './ProductList.module.scss';
+import React from "react";
+import Product from "../product/Product";
+import products from "../../assets/products/products.json";
+import images from "../../services/images";
+import styles from "./ProductList.module.scss";
 
 function ProductList() {
   return (
@@ -19,6 +19,6 @@ function ProductList() {
       ))}
     </div>
   );
-};
+}
 
 export default ProductList;

@@ -5,4 +5,11 @@
   padding: 10px;
   border-bottom: 1px solid var(--border-color);
   background-color: var(--primary-light-color);
+  &__name {
+    margin: 0 0 5px 0;
+    font-weight: 600;
+  }
+  &__price {
+    color: var(--secondary-light-color);
+  }
 }
