@@ -7,6 +7,11 @@
   border-bottom: 1px solid var(--border-color);
 }
 
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -20,4 +25,38 @@
   height: 50px;
   padding: 0 5px;
   fill: var(--neutral-color);
+}
+
+.themeSwitcher {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // padding: 0 20px;
+  &__caption {
+    letter-spacing: 0.5px;
+    text-align: center;
+    font-size: 12px;
+    margin: 0 0 5px 0;
+    color: var(--secondary-color);
+  }
+  &__label {
+    position: relative;
+    display: inline-block;
+    input {
+      display: none;
+    }
+    input:checked + .themeSwitcher__btn {
+      background: url("../../assets/svg/moon.svg") no-repeat center;
+      background-size: cover;
+    }
+  }
+  &__btn {
+    width: 35px;
+    height: 35px;
+    background: url("../../assets/svg/sun.svg") no-repeat center;
+    background-size: cover;
+    transition: all 1s;
+    cursor: pointer;
+  }
 }
