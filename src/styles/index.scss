@@ -3,7 +3,50 @@
 
 :root {
   --white: #fff;
-  --blue: #29aae1;
+  --black: #000;
+  
+  --grey-100: #f0f0f0;
+  --grey-200: #c7c7c7;
+  --grey-300: #787878;
+  --grey-400: #6a6a6a;
+
+  --navy-blue-100: #d5e7ff;
+  --navy-blue-200: #006eff;
+  --navy-blue-300: #0033a1;
+
+  --dark-grey-100: #272822;
+  --dark-grey-200: #1e1e1c;
+
+  --blue-100: #E7F6F2;
+  --blue-200: #A5C9CA;
+  --blue-300: #566869;
+  --blue-400: #395B64;
+}
+
+html[color-theme="light"] {
+  --primary-color: var(--grey-100);
+  --primary-light-color: var(--white);
+  --secondary-color: var(--black);
+  --secondary-light-color: var(--grey-400);
+  --neutral-color: var(--navy-blue-300);
+  --neutral-additional-color: var(--white);
+  --hover-color: var(--navy-blue-200);
+  --hover-additional-color: var(--navy-blue-100);
+  --shadow: var(--grey-300);
+  --border-color: var(--grey-200);
+}
+
+html[color-theme="dark"] {
+  --primary-color: var(--dark-grey-200);
+  --primary-light-color: var(--dark-grey-100);
+  --secondary-color: var(--blue-200);
+  --secondary-light-color: var(--blue-100);
+  --neutral-color: var(--blue-200);
+  --neutral-additional-color: var(--blue-400);
+  --hover-color: var(--navy-blue-100);
+  --hover-additional-color: var(--blue-300);
+  --shadow: var(--grey-400);
+  --border-color: var(--grey-300);
 }
 
 body {

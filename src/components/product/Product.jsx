@@ -32,8 +32,8 @@ function Product({id, img, name, author, price}) {
       <div className={styles.product__name}>{name}</div>
       <div className={styles.product__author}>{author}</div>
       <div className={styles.product__buyWrapper}>
-        <div className={styles.product__price}>{price}$</div>
-        <Button onClick={addToCart}>buy</Button>
+        <div className={styles.product__price}>${price}</div>
+        <Button onClick={addToCart}>Buy</Button>
       </div>
     </div>
   );

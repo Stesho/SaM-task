@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Header.module.scss";
-import logo from "../../assets/img/logo.jpg";
+import { ReactComponent as Logo } from "../../assets/img/logo.svg";
+
 
 function Header() {
   return (
@@ -9,7 +10,7 @@ function Header() {
         <nav className={styles.nav}>
           <div className={styles.logo}>
             <span>Book</span>
-            <img src={logo} alt="logo" />
+            <Logo className={styles.img}/>
             <span>Shop</span>
           </div>
         </nav>
