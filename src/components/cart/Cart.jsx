@@ -20,15 +20,21 @@ function Cart() {
     <div className={styles.cart}>
       <h2 className={styles.cart__title}>Cart</h2>
       <div className={styles.cart__list}>
-        {cart.map((item) => (
-          <CartItem
-            key={item.id}
-            id={item.id}
-            name={item.name}
-            price={item.price}
-            count={item.count}
-          />
-        ))}
+        {
+        cart.length > 0
+        ? cart.map((item) => (
+            <CartItem
+              key={item.id}
+              id={item.id}
+              name={item.name}
+              price={item.price}
+              count={item.count}
+            />
+          ))
+        : <div className={styles.cart__emptyList}>
+            Сart is empty
+          </div>
+        }
       </div>
       <div className={styles.cart__checkout}>
         <div className={styles.cart__total}>

@@ -7,6 +7,15 @@
   gap: 30px calc((100% - 200px * 6) / 5);
 }
 
+.emptyList {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
 // @media (max-width: 1850px) {
 //   .list {
 //     gap: 30px calc((100% - 200px * 5)/4);
