@@ -12,4 +12,8 @@
   &__price {
     color: var(--secondary-light-color);
   }
+  &__delete {
+    font-size: 1rem;
+    cursor: pointer;
+  }
 }

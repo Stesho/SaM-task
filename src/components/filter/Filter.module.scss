@@ -1,0 +1,54 @@
+.filter {
+  position: relative;
+  &__btn {
+    padding: 20px;
+    border-right: 1px solid var(--border-color);
+    background-color: var(--primary-light-color);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    cursor: pointer;
+  }
+}
+
+.menu {
+  position: absolute;
+  z-index: 1;
+  max-width: 300px;
+  width: 100%;
+  padding: 10px;
+  top: 100%;
+  left: 0;
+  border: 1px solid var(--border-color);
+  background-color: var(--primary-color);
+  &__title {
+    margin: 0 0 10px 0;
+  }
+  &__listItem {
+    margin: 0 0 12px 0;
+    input {
+      display: none;
+    }
+    input:checked + .menu__listLabel::before {
+      background-color: var(--neutral-color);
+    }
+  }
+  &__listLabel {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0 0 0 30px;
+    cursor: pointer;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      left: 0;
+      background-color: var(--primary-light-color);
+      border: 4px solid var(--primary-light-color);
+    }
+    &:hover::before {
+      background-color: var(--hover-additional-color);
+    }
+  }
+}
