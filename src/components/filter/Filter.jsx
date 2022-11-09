@@ -6,6 +6,8 @@ import styles from './Filter.module.scss';
 function Filter({ products, setProducts }) {
   const authorsName = new Set(products.map((item) => item.author));
   const authors = Array.from(authorsName).map((item, i) => ({id: i, author: item}));
+  const checkboxes = authors.map(() => false);
+  const [isChecked, setIsChecked] = useState(checkboxes);
   const [filterParams, setFilterParams] = useState({
     authors: [],
   });
@@ -25,7 +27,6 @@ function Filter({ products, setProducts }) {
     else {
       setFilterParams((currentParam) => ({...currentParam, authors: author}));
     }
-    console.log(filterParams.authors);
   }
   
   const filter = () => {
@@ -49,18 +50,24 @@ function Filter({ products, setProducts }) {
             Author
           </h3>
           <div className={styles.menu__list}>
-            <ul className={styles.menu__autorsList}>
+            <ul>
               {
                 authors.map((item, i) => (
-                  <li className={styles.menu__listItem} key={item.id}>
+                  <li className={styles.menu__author} key={item.id}>
                     <label htmlFor={`author${i}`}>
                       <input
                         id={`author${i}`}
                         type="checkbox"
                         value={item.author}
-                        onClick={(event) => toggleAuthor(event.target.value)}
+                        checked={isChecked[i]}
+                        onChange={(event) => {
+                          const newCheckboxes = [...isChecked];
+                          newCheckboxes[i] = !newCheckboxes[i];
+                          toggleAuthor(event.target.value);
+                          setIsChecked(newCheckboxes);
+                        }}
                       />
-                      <span className={styles.menu__listLabel}>
+                      <span className={styles.menu__authorName}>
                         {item.author}
                       </span>
                     </label>

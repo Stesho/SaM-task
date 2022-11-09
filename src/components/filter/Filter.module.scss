@@ -6,6 +6,7 @@
     background-color: var(--primary-light-color);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    text-transform: uppercase;
     cursor: pointer;
   }
 }
@@ -24,16 +25,16 @@
   &__title {
     margin: 0 0 10px 0;
   }
-  &__listItem {
+  &__author {
     margin: 0 0 12px 0;
     input {
       display: none;
     }
-    input:checked + .menu__listLabel::before {
+    input:checked + .menu__authorName::before {
       background-color: var(--neutral-color);
     }
   }
-  &__listLabel {
+  &__authorName {
     display: flex;
     align-items: center;
     position: relative;
