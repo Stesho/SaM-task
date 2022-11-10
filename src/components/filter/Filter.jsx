@@ -3,7 +3,7 @@ import DropMenu from '../dropMenu/DropMenu';
 import Button from '../button/Button';
 import styles from './Filter.module.scss';
 
-function Filter({ products, setProducts }) {
+function Filter({ products, setProducts, className, children }) {
   const authorsName = new Set(products.map((item) => item.author));
   const authors = Array.from(authorsName).map((item, i) => ({id: i, author: item}));
   const [min, setMin] = useState(0);
@@ -71,7 +71,7 @@ function Filter({ products, setProducts }) {
 
   return (
     <div className={styles.filter}>
-      <DropMenu caption='Filter' className={styles.filter__btn}>
+      <DropMenu caption={children} className={className}>
         <div className={styles.menu}>
           <h3 className={styles.menu__title}>
             Price
