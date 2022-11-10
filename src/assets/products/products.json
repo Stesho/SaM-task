@@ -18,7 +18,7 @@
     "img": "the-picture-of-dorian-gray.jpg",
     "name": "The Picture of Dorian Gray",
     "author": "Oscar Wilde",
-    "price": 15
+    "price": 15.2
   },
   {
     "id": 4,
@@ -34,68 +34,109 @@
     "author": "Fyodor Dostoevsky",
     "price": 14
   },
-
   {
     "id": 6,
-    "img": "the-picture-of-dorian-gray.jpg",
-    "name": "The Picture of Dorian Gray",
-    "author": "Oscar Wilde",
-    "price": 10
+    "img": "the-master-and-margarita.jpg",
+    "name": "The Master and Margarita",
+    "author": "Mikhail Bulgakov",
+    "price": 16.5
   },
   {
     "id": 7,
-    "img": "anna-karenina.jpg",
-    "name": "Anna Karenina",
-    "author": "Leo Tolstoy",
-    "price": 10
+    "img": "three-comrades.jpg",
+    "name": "Three Comrades",
+    "author": "Erich Maria Remarque",
+    "price": 9.8
   },
   {
     "id": 8,
-    "img": "crime-and-punishment.jpg",
-    "name": "Crime and Punishment",
-    "author": "Fyodor Dostoevsky",
-    "price": 12
+    "img": "the-little-prince.jpg",
+    "name": "The Little Prince",
+    "author": "Antoine de Saint-Exupery",
+    "price": 21
   },
   {
     "id": 9,
-    "img": "the-picture-of-dorian-gray.jpg",
-    "name": "The Picture of Dorian Gray",
-    "author": "Oscar Wilde",
-    "price": 25
+    "img": "one-hundred-years-of-solitude.jpg",
+    "name": "One hundred years of solitude",
+    "author": "Gabriel García Márquez",
+    "price": 23
   },
   {
     "id": 10,
-    "img": "anna-karenina.jpg",
-    "name": "Anna Karenina",
-    "author": "Leo Tolstoy",
-    "price": 16
+    "img": "the-idiot.jpg",
+    "name": "The Idiot",
+    "author": "Fyodor Dostoevsky",
+    "price": 13.5
   },
   {
     "id": 11,
-    "img": "crime-and-punishment.jpg",
-    "name": "Crime and Punishment",
-    "author": "Fyodor Dostoevsky",
-    "price": 18
+    "img": "arch-of-triumph.jpg",
+    "name": "Arch of Triumph",
+    "author": "Erich Maria Remarque",
+    "price": 14
   },
   {
     "id": 12,
-    "img": "the-picture-of-dorian-gray.jpg",
-    "name": "The Picture of Dorian Gray",
-    "author": "Oscar Wilde",
-    "price": 15.5
+    "img": "harry-potter-and-the-philosophers-stone.jpg",
+    "name": "Harry Potter and the Philosopher's Stone",
+    "author": "J. K. Rowling",
+    "price": 16.8
   },
   {
     "id": 13,
-    "img": "anna-karenina.jpg",
-    "name": "Anna Karenina",
-    "author": "Leo Tolstoy",
-    "price": 17.8
+    "img": "fight-club.jpg",
+    "name": "Fight Club",
+    "author": "Chuck Palahniuk",
+    "price": 18.2
   },
   {
     "id": 14,
-    "img": "crime-and-punishment.jpg",
-    "name": "Crime and Punishment",
+    "img": "the-brothers-karamazov.jpg",
+    "name": "The Brothers Karamazov",
     "author": "Fyodor Dostoevsky",
-    "price": 12.2
+    "price": 17
+  },
+  {
+    "id": 15,
+    "img": "harry-potter-and-the-order-of-the-phoenix.jpg",
+    "name": "Harry Potter and the Order of the Phoenix",
+    "author": "J. K. Rowling",
+    "price": 22.6
+  },
+  {
+    "id": 16,
+    "img": "harry-potter-and-the-chamber-of-secrets.jpg",
+    "name": "Harry Potter and the Chamber of Secrets",
+    "author": "J. K. Rowling",
+    "price": 20
+  },
+  {
+    "id": 17,
+    "img": "heart-of-a-dog.jpg",
+    "name": "Heart of a Dog",
+    "author": "Mikhail Bulgakov",
+    "price": 20.4
+  },
+  {
+    "id": 18,
+    "img": "martin-eden.jpg",
+    "name": "Martin Eden",
+    "author": "Jack London",
+    "price": 12.5
+  },
+  {
+    "id": 19,
+    "img": "animal-farm.jpg",
+    "name": "Animal Farm",
+    "author": "George Orwell",
+    "price": 10
+  },
+  {
+    "id": 19,
+    "img": "woe-from-wit.jpg",
+    "name": "Woe from Wit",
+    "author": "Alexander Griboyedov",
+    "price": 10.6
   }
 ]
