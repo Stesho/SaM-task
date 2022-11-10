@@ -69,6 +69,15 @@ function Filter({ products, setProducts, className, children }) {
     setProducts([...filtered]);
   }
 
+  const reset = () => {
+    setMin(0);
+    setMax(100);
+    setIsChecked((state) => [...state.map(() => false)]);
+    setFilterParams({
+      authors: [],
+    });
+  }
+
   return (
     <div className={styles.filter}>
       <DropMenu caption={children} className={className}>
@@ -128,7 +137,10 @@ function Filter({ products, setProducts, className, children }) {
               }
             </ul>
           </div>
-          <Button onClick={filter}>Filter</Button>
+          <div className={styles.menu__buttons}>
+            <Button onClick={filter}>Filter</Button>
+            <Button onClick={reset}>Reset</Button>
+          </div>
         </div>
       </DropMenu>
     </div>
