@@ -43,14 +43,44 @@
   font-size: 1.5rem;
 }
 
-// @media (max-width: 1850px) {
-//   .list {
-//     gap: 30px calc((100% - 200px * 5)/4);
-//   }
-// }
+@media (max-width: 1850px) {
+  .list {
+    gap: 30px calc((100% - 200px * 5)/4);
+  }
+}
 
-// @media (max-width: 1600px) {
-//   .list {
-//     gap: 30px calc((100% - 200px * 4)/3);
-//   }
-// }
+@media (max-width: 1600px) {
+  .list {
+    gap: 30px calc((100% - 200px * 4)/3);
+  }
+}
+
+@media (max-width: 1250px) {
+  .list {
+    gap: 30px calc((100% - 200px * 3)/2);
+  }
+}
+
+@media (max-width: 1024px) {
+  .list {
+    gap: 30px calc((100% - 200px * 4)/3);
+  }
+}
+
+@media (max-width: 960px) {
+  .list {
+    gap: 30px calc((100% - 200px * 3)/2);
+  }
+}
+
+@media (max-width: 728px) {
+  .list {
+    gap: 30px calc((100% - 200px * 2)/1);
+  }
+}
+
+@media (max-width: 500px) {
+  .list {
+    justify-content: center;
+  }
+}

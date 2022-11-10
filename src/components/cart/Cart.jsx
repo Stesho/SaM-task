@@ -5,7 +5,7 @@ import CartContext from "../../context/CartContext";
 import Button from "../button/Button";
 import styles from "./Cart.module.scss";
 
-function Cart() {
+function Cart({ className }) {
   const { cart, setCart } = useContext(CartContext);
   const [total, setTotal] = useState(0);
   const [isActiveModal, setIsActiveModal] = useState(false);
@@ -24,7 +24,7 @@ function Cart() {
   }, [cart]);
 
   return (
-    <div className={styles.cart}>
+    <div className={[styles.cart, className].join(' ')}>
       <h2 className={styles.cart__title}>Cart</h2>
       <div className={styles.cart__list}>
         {cart.length > 0 ? (

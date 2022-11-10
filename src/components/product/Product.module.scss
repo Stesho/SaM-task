@@ -45,3 +45,12 @@
     font-size: 1rem;
   }
 }
+
+@media (max-width: 1024px) {
+  .product {
+    &:hover {
+      transform: none;
+      box-shadow: -5px 5px 10px var(--shadow);
+    }
+  }
+}

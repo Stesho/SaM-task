@@ -8,7 +8,7 @@ function Main() {
     <main className={styles.main}>
       <div className={[styles.container, styles.wrapper].join(" ")}>
         <ProductList />
-        <Cart />
+        <Cart className={styles.cart}/>
       </div>
     </main>
   );
