@@ -3,6 +3,7 @@ import ProductsContext from "../../context/ProductsContext";
 import Product from "../product/Product";
 import Filter from "../filter/Filter";
 import Sort from "../sort/Sort";
+import SearchBar from "../searchBar/SearchBar";
 import images from "../../services/images";
 import styles from "./ProductList.module.scss";
 
@@ -13,16 +14,23 @@ function ProductList() {
   return (
     <div className={styles.productList}>
       <div className={styles.bar}>
-        <Filter
-          products={products}
-          setProducts={setProductList}
-          className={styles.bar__filter}
-        >
-          Filter
-        </Filter>
-        <Sort className={styles.bar__sort} setValue={setProductList}>
-          Sort
-        </Sort>
+        <div className={styles.bar__buttons}>
+          <Filter
+            products={products}
+            setProducts={setProductList}
+            className={styles.bar__filter}
+          >
+            Filter
+          </Filter>
+          <Sort className={styles.bar__sort} setValue={setProductList}>
+            Sort
+          </Sort>
+        </div>
+        <SearchBar
+          productsList={products}
+          setProductList={setProductList}
+          placeholder='type book name...'
+        />
       </div>
       <div className={styles.list}>
         {productsList.length > 0 ? (
