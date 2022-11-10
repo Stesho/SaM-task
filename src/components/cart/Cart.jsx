@@ -13,7 +13,7 @@ function Cart() {
   const checkout = () => {
     setIsActiveModal(true);
     setCart([]);
-  }
+  };
 
   useEffect(() => {
     const totalSum = cart.reduce(
@@ -27,9 +27,8 @@ function Cart() {
     <div className={styles.cart}>
       <h2 className={styles.cart__title}>Cart</h2>
       <div className={styles.cart__list}>
-        {
-        cart.length > 0
-        ? cart.map((item) => (
+        {cart.length > 0 ? (
+          cart.map((item) => (
             <CartItem
               key={item.id}
               id={item.id}
@@ -38,30 +37,21 @@ function Cart() {
               count={item.count}
             />
           ))
-        : <div className={styles.cart__emptyList}>
-            Сart is empty
-          </div>
-        }
+        ) : (
+          <div className={styles.cart__emptyList}>Сart is empty</div>
+        )}
       </div>
       <div className={styles.cart__checkout}>
         <div className={styles.cart__total}>
           <span className={styles.cart__totalCaption}>Total: </span>
           <span className={styles.cart__totalSum}>${total}</span>
         </div>
-        <Button
-          className={styles.cart__btn}
-          onClick={() => checkout()}
-        >
+        <Button className={styles.cart__btn} onClick={() => checkout()}>
           Checkout
         </Button>
       </div>
-      <Modal
-        isActive={isActiveModal}
-        setIsActive={setIsActiveModal}
-      >
-        <div className={styles.modal}>
-          Thank you for the purchase!
-        </div>
+      <Modal isActive={isActiveModal} setIsActive={setIsActiveModal}>
+        <div className={styles.modal}>Thank you for the purchase!</div>
       </Modal>
     </div>
   );

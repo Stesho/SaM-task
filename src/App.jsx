@@ -3,7 +3,7 @@ import CartContext from "./context/CartContext";
 import ProductsContext from "./context/ProductsContext";
 import Header from "./components/header/Header";
 import Main from "./components/main/Main";
-import productsData from './assets/products/products.json';
+import productsData from "./assets/products/products.json";
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -14,12 +14,12 @@ function App() {
 
   return (
     <ProductsContext.Provider value={productsValue}>
-    <CartContext.Provider value={cartValue}>
-      <div className="app">
-        <Header />
-        <Main />
-      </div>
-    </CartContext.Provider>
+      <CartContext.Provider value={cartValue}>
+        <div className="app">
+          <Header />
+          <Main />
+        </div>
+      </CartContext.Provider>
     </ProductsContext.Provider>
   );
 }

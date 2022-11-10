@@ -13,7 +13,11 @@ function ProductList() {
   return (
     <div className={styles.productList}>
       <div className={styles.bar}>
-        <Filter products={products} setProducts={setProductList} className={styles.bar__filter}>
+        <Filter
+          products={products}
+          setProducts={setProductList}
+          className={styles.bar__filter}
+        >
           Filter
         </Filter>
         <Sort className={styles.bar__sort} setValue={setProductList}>
@@ -21,9 +25,8 @@ function ProductList() {
         </Sort>
       </div>
       <div className={styles.list}>
-        {
-        productsList.length > 0
-        ? productsList.map((item) => (
+        {productsList.length > 0 ? (
+          productsList.map((item) => (
             <Product
               key={item.id}
               id={item.id}
@@ -33,10 +36,9 @@ function ProductList() {
               price={item.price}
             />
           ))
-        : <div className={styles.emptyList}>
-            Selected products are missing
-          </div>
-        }
+        ) : (
+          <div className={styles.emptyList}>Selected products are missing</div>
+        )}
       </div>
     </div>
   );
