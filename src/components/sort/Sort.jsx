@@ -41,7 +41,8 @@ function Sort({ setValue, className, children}) {
                 className={styles.select__option}
                 onClick={() => {
                   option.sortFunction();
-                }} key={option.id}
+                }}
+                key={option.id}
               >
                 {option.value}
               </button>

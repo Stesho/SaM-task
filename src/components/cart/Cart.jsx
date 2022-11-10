@@ -6,9 +6,14 @@ import Button from "../button/Button";
 import styles from "./Cart.module.scss";
 
 function Cart() {
-  const { cart } = useContext(CartContext);
+  const { cart, setCart } = useContext(CartContext);
   const [total, setTotal] = useState(0);
   const [isActiveModal, setIsActiveModal] = useState(false);
+
+  const checkout = () => {
+    setIsActiveModal(true);
+    setCart([]);
+  }
 
   useEffect(() => {
     const totalSum = cart.reduce(
@@ -45,7 +50,7 @@ function Cart() {
         </div>
         <Button
           className={styles.cart__btn}
-          onClick={() => setIsActiveModal(true)}
+          onClick={() => checkout()}
         >
           Checkout
         </Button>
