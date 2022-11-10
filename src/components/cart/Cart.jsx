@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import CartItem from "../cartItem/CartItem";
+import Modal from "../modal/Modal";
 import CartContext from "../../context/CartContext";
 import Button from "../button/Button";
 import styles from "./Cart.module.scss";
@@ -7,6 +8,7 @@ import styles from "./Cart.module.scss";
 function Cart() {
   const { cart } = useContext(CartContext);
   const [total, setTotal] = useState(0);
+  const [isActiveModal, setIsActiveModal] = useState(false);
 
   useEffect(() => {
     const totalSum = cart.reduce(
@@ -41,8 +43,21 @@ function Cart() {
           <span className={styles.cart__totalCaption}>Total: </span>
           <span className={styles.cart__totalSum}>${total}</span>
         </div>
-        <Button className={styles.cart__btn}>Checkout</Button>
+        <Button
+          className={styles.cart__btn}
+          onClick={() => setIsActiveModal(true)}
+        >
+          Checkout
+        </Button>
       </div>
+      <Modal
+        isActive={isActiveModal}
+        setIsActive={setIsActiveModal}
+      >
+        <div className={styles.modal}>
+          Thank you for the purchase!
+        </div>
+      </Modal>
     </div>
   );
 }
