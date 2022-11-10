@@ -6,11 +6,35 @@ import styles from './Filter.module.scss';
 function Filter({ products, setProducts }) {
   const authorsName = new Set(products.map((item) => item.author));
   const authors = Array.from(authorsName).map((item, i) => ({id: i, author: item}));
+  const [min, setMin] = useState(0);
+  const [max, setMax] = useState(100);
   const checkboxes = authors.map(() => false);
   const [isChecked, setIsChecked] = useState(checkboxes);
   const [filterParams, setFilterParams] = useState({
     authors: [],
   });
+
+  const setMinPrice = (price) => {
+    const newPrice = Number(price);
+    setMin(newPrice);
+    if(newPrice < 0) {
+      setMin(0);
+    }
+    else if(newPrice > max) {
+      setMin(max);
+    }
+  }
+
+  const setMaxPrice = (price) => {
+    const newPrice = Number(price);
+    setMax(newPrice);
+    if(newPrice > 100) {
+      setMax(100);
+    }
+    else if(newPrice < min) {
+      setMax(min);
+    }
+  }
 
   const toggleAuthor = (author) => {
     if (Array.isArray(filterParams.authors)) {
@@ -30,14 +54,17 @@ function Filter({ products, setProducts }) {
   }
   
   const filter = () => {
-    if (filterParams.authors.length === 0) {
-      setProducts(products);
-      return;
-    }
-    
-    const filtered = products.filter((product) => (
-      filterParams.authors.find((author) => author === product.author)
-    ));
+    const filtered = products.filter((product) => {
+      let condition = true;
+      if (filterParams.authors.length > 0) {
+        condition = filterParams.authors.find((author) => author === product.author);
+      }
+      return (
+        condition &&
+        product.price >= min &&
+        product.price <= max
+      )
+    });
     
     setProducts([...filtered]);
   }
@@ -47,13 +74,38 @@ function Filter({ products, setProducts }) {
       <DropMenu caption='Filter' className={styles.filter__btn}>
         <div className={styles.menu}>
           <h3 className={styles.menu__title}>
+            Price
+          </h3>
+          <div className={[styles.menu__section, styles.price].join(' ')}>
+            <div className={styles.min}>
+              <span>min:</span>
+              <input
+                type="number"
+                value={min}
+                onChange={(event) => setMin(event.target.value)}
+                onBlur={(event) => setMinPrice(event.target.value)}
+              />
+              <span>$</span>
+            </div>
+            <div className={styles.max}>
+              <span>max:</span>
+              <input
+                type="number"
+                value={max}
+                onChange={(event) => setMax(event.target.value)}
+                onBlur={(event) => setMaxPrice(event.target.value)}
+              />
+              <span>$</span>
+            </div>
+          </div>
+          <h3 className={styles.menu__title}>
             Author
           </h3>
-          <div className={styles.menu__list}>
+          <div className={styles.menu__section}>
             <ul>
               {
                 authors.map((item, i) => (
-                  <li className={styles.menu__author} key={item.id}>
+                  <li className={styles.author} key={item.id}>
                     <label htmlFor={`author${i}`}>
                       <input
                         id={`author${i}`}
@@ -67,7 +119,7 @@ function Filter({ products, setProducts }) {
                           setIsChecked(newCheckboxes);
                         }}
                       />
-                      <span className={styles.menu__authorName}>
+                      <span className={styles.authorName}>
                         {item.author}
                       </span>
                     </label>
