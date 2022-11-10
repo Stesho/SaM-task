@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/SaM-task/static/css/main.4d3f2d9e.css",
-    "main.js": "/SaM-task/static/js/main.be233e08.js",
+    "main.css": "/SaM-task/static/css/main.ff98d305.css",
+    "main.js": "/SaM-task/static/js/main.0747ee0e.js",
     "static/media/harry-potter-and-the-philosophers-stone.webp": "/SaM-task/static/media/harry-potter-and-the-philosophers-stone.4e6a60fee5740a2fa7af.webp",
     "static/media/heart-of-a-dog.webp": "/SaM-task/static/media/heart-of-a-dog.8afc12b396e14175b9bd.webp",
     "static/media/the-idiot.webp": "/SaM-task/static/media/the-idiot.1ac7a588c3ba6d3de8c0.webp",
@@ -25,13 +25,14 @@
     "static/media/moon.svg": "/SaM-task/static/media/moon.6feed194040d594f7b93.svg",
     "static/media/logo.svg": "/SaM-task/static/media/logo.bbce64f29532c0cd87a3dc58817647aa.svg",
     "static/media/sun.svg": "/SaM-task/static/media/sun.0db00825e8225367f267.svg",
+    "static/media/cart.svg": "/SaM-task/static/media/cart.ac3fc3a10a4dad669701e1c7a82a552a.svg",
     "static/media/search.svg": "/SaM-task/static/media/search.e0b696f327468be32ac4c5e19adcf6ce.svg",
     "index.html": "/SaM-task/index.html",
-    "main.4d3f2d9e.css.map": "/SaM-task/static/css/main.4d3f2d9e.css.map",
-    "main.be233e08.js.map": "/SaM-task/static/js/main.be233e08.js.map"
+    "main.ff98d305.css.map": "/SaM-task/static/css/main.ff98d305.css.map",
+    "main.0747ee0e.js.map": "/SaM-task/static/js/main.0747ee0e.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d3f2d9e.css",
-    "static/js/main.be233e08.js"
+    "static/css/main.ff98d305.css",
+    "static/js/main.0747ee0e.js"
   ]
 }
