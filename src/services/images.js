@@ -8,7 +8,7 @@ const importAll = (r) => {
 };
 
 const images = importAll(
-  require.context("../assets/img/products/", false, /\.(png|jpe?g|svg)$/)
+  require.context("../assets/img/products/", false, /\.(png|jpe?g|svg|webp)$/)
 );
 
 export default images;
