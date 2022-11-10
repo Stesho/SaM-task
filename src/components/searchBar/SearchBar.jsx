@@ -27,7 +27,7 @@ function SearchBar({ productsList, setProductList, placeholder }) {
   return (
     <div className={styles.searchBox}>
       <button type="button" className={styles.btnSearch}>
-        <Search />
+        <Search className={styles.searchIcon}/>
       </button>
       <input
         type="text"

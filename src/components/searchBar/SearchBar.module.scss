@@ -38,6 +38,9 @@
   pointer-events: painted;  
   cursor: pointer;
 }
+.searchIcon {
+  fill: var(--secondary-color);
+}
 .btnSearch:focus ~ .inputSearch{
   width: 300px;
   // background-color: transparent;
